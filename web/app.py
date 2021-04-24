@@ -4,7 +4,7 @@ John Doe's Flask API.
 
 import config
 import os
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, send_from_directory
 
 app = Flask(__name__)
 
