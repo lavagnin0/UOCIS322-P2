@@ -19,7 +19,7 @@ def hello():
     return "UOCIS docker demo!\n"
 
 
-@app.route("/<filename>")
+@app.route("/<path:filename>")
 def get_page(filename):
     if any((char in filename) for char in ILLEGAL_CHARS):
         abort(403)
